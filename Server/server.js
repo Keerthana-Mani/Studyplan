@@ -9,7 +9,7 @@ import studyPlanRoutes from  './routes/studyPlanRoutes.js';
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors({"orgin":"*"}));
 app.use(express.json());
 
 
